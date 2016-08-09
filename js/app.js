@@ -6,7 +6,8 @@ var game = new Phaser.Game(
   {
     preload: preload,
     create: create,
-    update: update
+    update: update,
+    render: render,
   }
 );
 
@@ -60,7 +61,10 @@ var mustard;
 var ketchup;
 var mayo;
 
-var selectedSprite = null;
+var selectedIngredient;
+
+var hamburger;
+
 
 function preload() {
   sprites.forEach(function(sprite) {
@@ -68,9 +72,15 @@ function preload() {
   });
 }
 
+
 function create() {
   floor = game.add.sprite(0, 0, 'floor');
   assemblyLine = game.add.sprite(0, 0, 'assembly_line');
+
+  hamburger = game.add.group();
+  hamburger.create(70, 170, 'bottom_bun');
+  hamburger.setAll('inputEnabled', true);
+  hamburger.callAll('events.onInputDown.add', 'events.onInputDown', placeIngredient);
 
   patties = game.add.sprite(160, 260, 'patties');
   cheeses = game.add.sprite(240, 270, 'cheeses');
@@ -86,22 +96,44 @@ function create() {
   var ingredients = [patties, cheeses, lettuces, onions, tomatoes, top_buns, bottom_buns, ketchup, mustard, mayo];
   ingredients.forEach(function(element) {
     element.inputEnabled = true;
-    element.events.onInputUp.add(clickIngredient, this);
+    element.events.onInputUp.add(pickUpIngredient, this);
   });
 }
 
-function clickIngredient(sprite, pointer) {
-  selectedSprite = game.add.sprite(pointer.x, pointer.y, ingredientMap[sprite.key]);
-  selectedSprite.anchor.setTo(0.5, 0.5);
+
+function pickUpIngredient(sprite, pointer) {
+  selectedIngredient = game.add.sprite(pointer.x, pointer.y, ingredientMap[sprite.key]);
+  selectedIngredient.anchor.setTo(0.5, 0.5);
 }
 
+
+function placeIngredient(sprite, pointer) {
+  if (selectedIngredient) {
+    var lastIngredient = hamburger.children[hamburger.children.length - 1]
+    hamburger.create(lastIngredient.x, lastIngredient.y - 5, selectedIngredient.key);
+    hamburger.setAll('inputEnabled', true);
+    hamburger.callAll('events.onInputDown.add', 'events.onInputDown', placeIngredient);
+  }
+}
+
+
 function update() {
-  if (selectedSprite) {
-    selectedSprite.x = game.input.x;
-    selectedSprite.y = game.input.y;
+  hamburger.x += 1;
+  if (hamburger.x > 500) {
+    hamburger.x = 70;
   }
 
-  if (selectedSprite && game.input.mousePointer.isDown) {
-    selectedSprite = null;
+  if (selectedIngredient) {
+    selectedIngredient.x = game.input.x;
+    selectedIngredient.y = game.input.y;
   }
+
+  if (selectedIngredient && game.input.mousePointer.isDown) {
+    selectedIngredient.destroy();
+    selectedIngredient = null;
+  }
+}
+
+function render() {
+
 }

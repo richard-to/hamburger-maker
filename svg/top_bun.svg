@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="86.36997985839844" height="87.760009765625" viewBox="164.142 324.705 86.37 87.76" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <radialGradient id="gradient-38" gradientUnits="userSpaceOnUse" cx="139.013" cy="40.501" r="52.336" gradientTransform="matrix(0.837049, 0.56147, -0.580682, 0.865693, 87.979632, 231.757303)">
+      <stop offset="0" style="stop-color: rgb(255, 178, 91);"/>
+      <stop offset="1" style="stop-color: rgb(169, 84, 14);"/>
+    </radialGradient>
+  </defs>
+  <g transform="matrix(0.810172, 0, 0, 0.810172, 34.614067, 64.723251)">
+    <path d="M 164.843 363.321 C 164.142 348.822 191.504 326.521 205.994 325.655 C 221.88 324.705 232.219 325.331 241.567 338.21 C 250.512 350.533 250.504 385.208 238.08 394.011 C 212.034 412.465 166.383 395.205 164.843 363.321 Z" style="stroke: black; fill: url(#gradient-38); stroke-width: 1.23431;" bx:origin="0.5 0.5"/>
+    <rect x="305.999" y="47.142" width="4.227" height="3.251" style="fill: rgb(173, 92, 38); stroke: rgb(0, 0, 0); stroke-width: 1.23431;" transform="matrix(0.999996, 0, 0, 1.000004, -106.413645, 303.814917)"/>
+    <rect x="305.999" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.23431;" transform="matrix(0.999996, 0, 0, 1.000004, -91.016474, 314.758123)"/>
+    <rect x="306.002" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -117.695502, 330.517401)"/>
+    <rect x="305.999" y="47.142" width="4.227" height="3.251" style="fill: rgb(123, 57, 13); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -79.589392, 314.342108)"/>
+    <rect x="305.998" y="47.142" width="4.227" height="3.251" style="fill: rgb(173, 92, 38); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000008, -108.650244, 294.616026)"/>
+    <rect x="306.002" y="47.142" width="4.227" height="3.251" style="fill: rgb(173, 92, 38); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -120.158667, 313.122931)"/>
+    <rect x="305.999" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -92.752875, 305.143621)"/>
+    <rect x="306" y="47.142" width="4.227" height="3.251" style="fill: rgb(123, 57, 13); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000008, -89.983832, 329.220732)"/>
+    <rect x="306.003" y="47.142" width="4.227" height="3.251" style="fill: rgb(123, 57, 13); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(0.999996, 0, 0, 1.000008, -98.52923, 340.670164)"/>
+    <rect x="306" y="47.142" width="4.227" height="3.251" style="fill: rgb(123, 57, 13); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000008, -71.125677, 332.690855)"/>
+    <rect x="305.999" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -90.665716, 293.249853)"/>
+    <rect x="306.003" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(0.999996, 0, 0, 1.000008, -107.635858, 319.041258)"/>
+    <rect x="306" y="47.142" width="4.227" height="3.251" style="fill: rgb(123, 57, 13); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000008, -74.768332, 303.77722)"/>
+    <rect x="305.999" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -95.219031, 285.28153)"/>
+    <rect x="306" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000008, -79.321677, 295.808897)"/>
+    <rect x="305.999" y="47.142" width="4.227" height="3.251" style="fill: rgb(173, 92, 38); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -128.909567, 304.862494)"/>
+    <rect x="305.998" y="47.142" width="4.227" height="3.251" style="fill: rgb(107, 50, 12); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000008, -71.664679, 319.862394)"/>
+    <rect x="306.002" y="47.142" width="4.227" height="3.251" style="fill: rgb(148, 73, 24); stroke: rgb(0, 0, 0); stroke-width: 1.2343;" transform="matrix(1.000004, 0, 0, 1.000004, -103.283423, 327.162573)"/>
+  </g>
+</svg>

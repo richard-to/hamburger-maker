@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="68.31416320800781" height="67.77688598632812" viewBox="152.451 256.348 68.3142 67.7769" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-20" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.991598, -0.129359, 0.12437, 0.953361, -14.121012, 44.356599)">
+      <stop offset="0" style="stop-color: rgb(197, 162, 88);"/>
+      <stop offset="1" style="stop-color: rgb(80, 51, 8);"/>
+    </linearGradient>
+    <linearGradient id="gradient-21" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.991598, -0.126342, 0.12437, 0.931129, -18.207964, 41.670821)">
+      <stop offset="0" style="stop-color: rgb(197, 162, 88);"/>
+      <stop offset="1" style="stop-color: rgb(80, 51, 8);"/>
+    </linearGradient>
+    <linearGradient id="gradient-22" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.991598, -0.129359, 0.12437, 0.953361, -18.273713, 37.021837)">
+      <stop offset="0" style="stop-color: rgb(197, 162, 88);"/>
+      <stop offset="1" style="stop-color: rgb(80, 51, 8);"/>
+    </linearGradient>
+    <linearGradient id="gradient-23" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.991598, -0.126342, 0.12437, 0.931129, -22.360661, 34.336041)">
+      <stop offset="0" style="stop-color: rgb(197, 162, 88);"/>
+      <stop offset="1" style="stop-color: rgb(80, 51, 8);"/>
+    </linearGradient>
+    <linearGradient id="gradient-24" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.991598, -0.129359, 0.12437, 0.953361, -18.976783, 28.585032)">
+      <stop offset="0" style="stop-color: rgb(197, 162, 88);"/>
+      <stop offset="1" style="stop-color: rgb(80, 51, 8);"/>
+    </linearGradient>
+    <linearGradient id="gradient-25" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.991598, -0.126342, 0.12437, 0.931129, -23.063645, 25.89928)">
+      <stop offset="0" style="stop-color: rgb(197, 162, 88);"/>
+      <stop offset="1" style="stop-color: rgb(80, 51, 8);"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(0.626206934452057, 0, 0, 0.626206934452057, 49.66863632202143, 257.7446594238282)">
+    <path d="M 178.288 51.736 C 182.877 26.015 203.138 15.556 229.611 20.8 C 252.207 25.276 273.227 36.513 271.795 60.172 C 270.308 84.734 237.296 106.004 212.737 104.465 C 183.128 102.61 173.077 80.941 178.288 51.736 Z" style="stroke: black; fill: url(#gradient-20); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+    <path d="M 174.201 48.878 C 178.79 23.757 199.051 13.542 225.524 18.664 C 248.12 23.035 269.14 34.01 267.708 57.118 C 266.221 81.107 233.209 101.881 208.65 100.378 C 179.041 98.566 168.99 77.402 174.201 48.878 Z" style="stroke: black; fill: url(#gradient-21); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+    <path d="M 174.135 44.401 C 178.724 18.68 198.985 8.221 225.458 13.465 C 248.054 17.941 269.074 29.178 267.642 52.837 C 266.155 77.399 233.143 98.669 208.584 97.13 C 178.975 95.275 168.924 73.606 174.135 44.401 Z" style="stroke: black; fill: url(#gradient-22); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+    <path d="M 170.048 41.543 C 174.637 16.422 194.898 6.207 221.371 11.329 C 243.967 15.7 264.987 26.675 263.555 49.783 C 262.068 73.772 229.056 94.546 204.497 93.043 C 174.888 91.231 164.837 70.067 170.048 41.543 Z" style="stroke: black; fill: url(#gradient-23); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+    <path d="M 173.433 35.964 C 178.022 10.243 198.283 -0.216 224.756 5.028 C 247.352 9.504 268.372 20.741 266.94 44.4 C 265.453 68.962 232.441 90.232 207.882 88.693 C 178.273 86.838 168.222 65.169 173.433 35.964 Z" style="stroke: black; fill: url(#gradient-24); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+    <path d="M 169.346 33.106 C 173.935 7.985 194.196 -2.23 220.668 2.892 C 243.265 7.263 264.285 18.238 262.853 41.346 C 261.366 65.335 228.353 86.109 203.795 84.606 C 174.186 82.794 164.135 61.63 169.346 33.106 Z" style="stroke: black; fill: url(#gradient-25); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+  </g>
+</svg>

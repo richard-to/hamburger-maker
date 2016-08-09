@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="74.83578491210938" height="68.73565673828125" viewBox="402.673 271.532 74.8358 68.7357" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-26" gradientUnits="userSpaceOnUse" x1="163.434" y1="17.725" x2="163.434" y2="98.73" spreadMethod="pad" gradientTransform="matrix(1, 0, 0, 1, 0, 0)">
+      <stop offset="0" style="stop-color: rgb(248, 249, 245);"/>
+      <stop offset="1" style="stop-color: rgb(236, 237, 210);"/>
+    </linearGradient>
+    <linearGradient id="gradient-27" gradientUnits="userSpaceOnUse" x1="163.434" y1="17.725" x2="163.434" y2="98.73" spreadMethod="pad" gradientTransform="matrix(0.816648, 0, 0, 0.819478, 29.703247, 11.471855)">
+      <stop offset="0" style="stop-color: rgb(248, 249, 245);"/>
+      <stop offset="1" style="stop-color: rgb(236, 237, 210);"/>
+    </linearGradient>
+    <linearGradient id="gradient-28" gradientUnits="userSpaceOnUse" x1="163.434" y1="17.725" x2="163.434" y2="98.73" spreadMethod="pad" gradientTransform="matrix(0.705043, 0, 0, 0.765659, 50.052525, 11.019574)">
+      <stop offset="0" style="stop-color: rgb(248, 249, 245);"/>
+      <stop offset="1" style="stop-color: rgb(236, 237, 210);"/>
+    </linearGradient>
+    <linearGradient id="gradient-29" gradientUnits="userSpaceOnUse" x1="163.434" y1="17.725" x2="163.434" y2="98.73" spreadMethod="pad" gradientTransform="matrix(0.665184, 0, 0, 0.765659, 52.700104, 13.831892)">
+      <stop offset="0" style="stop-color: rgb(248, 249, 245);"/>
+      <stop offset="1" style="stop-color: rgb(236, 237, 210);"/>
+    </linearGradient>
+    <linearGradient id="gradient-30" gradientUnits="userSpaceOnUse" x1="163.434" y1="17.725" x2="163.434" y2="98.73" spreadMethod="pad" gradientTransform="matrix(0.665184, 0, 0, 0.539997, 55.512314, 29.080905)">
+      <stop offset="0" style="stop-color: rgb(248, 249, 245);"/>
+      <stop offset="1" style="stop-color: rgb(236, 237, 210);"/>
+    </linearGradient>
+    <linearGradient id="gradient-31" gradientUnits="userSpaceOnUse" x1="163.434" y1="17.725" x2="163.434" y2="98.73" spreadMethod="pad" gradientTransform="matrix(0.449943, 0, 0, 0.487921, 91.041214, 33.51905)">
+      <stop offset="0" style="stop-color: rgb(248, 249, 245);"/>
+      <stop offset="1" style="stop-color: rgb(236, 237, 210);"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(0.8485360741615295, 0, 0, 0.8485360741615295, 301.41125488281244, 256.49182128906256)">
+    <path d="M 123.448 53.142 C 126.735 31.412 139.653 17.725 161.414 20.8 C 180.26 23.463 205.328 36.951 206.41 55.954 C 207.531 75.643 183.925 96.506 164.226 97.435 C 136.769 98.73 119.337 80.32 123.448 53.142 Z" style="stroke: black; fill: url(#gradient-26); stroke-width: 1.1785;" bx:origin="0.5 0.5"/>
+    <g>
+      <path d="M 130.517 55.021 C 133.202 37.213 143.751 25.997 161.522 28.517 C 176.913 30.699 197.384 41.752 198.268 57.325 C 199.183 73.46 179.906 90.556 163.818 91.317 C 141.396 92.379 127.16 77.292 130.517 55.021 Z" style="stroke: black; fill: url(#gradient-27); stroke-width: 1.1785;" bx:origin="0.5 0.5"/>
+      <path d="M 137.088 51.708 C 139.406 35.071 148.514 24.591 163.856 26.945 C 177.143 28.984 194.817 39.312 195.58 53.861 C 196.371 68.936 179.727 84.91 165.839 85.622 C 146.48 86.613 134.19 72.517 137.088 51.708 Z" style="stroke: black; fill: url(#gradient-28); stroke-width: 1.1785;" bx:origin="0.5 0.5"/>
+      <path d="M 134.816 54.52 C 137.003 37.883 145.596 27.403 160.071 29.757 C 172.607 31.796 189.282 42.124 190.001 56.673 C 190.747 71.748 175.045 87.722 161.941 88.434 C 143.677 89.425 132.082 75.329 134.816 54.52 Z" style="stroke: black; fill: url(#gradient-29); stroke-width: 1.1785;" bx:origin="0.5 0.5"/>
+      <path d="M 137.628 57.777 C 139.815 46.043 148.408 38.652 162.883 40.312 C 175.419 41.75 192.094 49.034 192.813 59.296 C 193.559 69.928 177.857 81.193 164.753 81.695 C 146.489 82.394 134.894 72.453 137.628 57.777 Z" style="stroke: black; fill: url(#gradient-30); stroke-width: 1.1785;" bx:origin="0.5 0.5"/>
+      <path d="M 146.585 59.448 C 148.065 48.845 153.878 42.167 163.668 43.667 C 172.148 44.967 183.427 51.548 183.914 60.82 C 184.419 70.426 173.796 80.606 164.933 81.059 C 152.58 81.691 144.736 72.708 146.585 59.448 Z" style="stroke: black; fill: url(#gradient-31); stroke-width: 1.1785;" bx:origin="0.5 0.5"/>
+    </g>
+  </g>
+</svg>

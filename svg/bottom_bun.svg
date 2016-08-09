@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="68.31416320800781" height="67.77688598632812" viewBox="152.451 256.348 68.3142 67.7769" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-20" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.692568, -0.088604, 0.086864, 0.653013, 20.213301, 277.134218)">
+      <stop offset="0" style="stop-color: rgb(197, 162, 88);"/>
+      <stop offset="1" style="stop-color: rgb(169, 84, 14);"/>
+    </linearGradient>
+    <linearGradient id="gradient-21" gradientUnits="userSpaceOnUse" x1="223.152" y1="15.556" x2="223.152" y2="106.004" gradientTransform="matrix(0.656712, -0.086539, 0.082367, 0.637785, 24.127966, 275.294579)">
+      <stop offset="0" style="stop-color: rgb(239, 196, 147);"/>
+      <stop offset="1" style="stop-color: rgb(220, 165, 56);"/>
+    </linearGradient>
+  </defs>
+  <path d="M 154.599 282.189 C 157.803 264.571 171.955 257.408 190.444 260.999 C 206.227 264.065 216.707 270.64 218 286.824 C 219.344 303.648 193.257 317.028 176.086 317.734 C 155.977 318.561 150.959 302.193 154.599 282.189 Z" style="stroke: black; fill: url(#gradient-20); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+  <path d="M 154.606 279.945 C 157.646 262.738 174.494 257.075 192.027 260.584 C 206.992 263.578 216.815 267.57 215.866 283.397 C 214.881 299.829 190.826 309.578 176.467 311.312 C 156.961 313.667 151.154 299.483 154.606 279.945 Z" style="stroke: black; fill: url(#gradient-21); stroke-width: 1.59692;" bx:origin="0.5 0.5"/>
+</svg>

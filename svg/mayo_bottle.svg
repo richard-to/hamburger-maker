@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-1" gradientUnits="userSpaceOnUse" x1="56.833" y1="4.648" x2="56.833" y2="85.639" gradientTransform="matrix(0.553309, -0.832975, 0.371048, 0.24647, 5.101415, 75.803865)">
+      <stop style="stop-color: rgb(255, 254, 249);" offset="0"/>
+      <stop style="stop-color: rgb(255, 254, 215);" offset="1"/>
+    </linearGradient>
+    <linearGradient id="gradient-2" gradientUnits="userSpaceOnUse" x1="25.656" y1="58.672" x2="25.656" y2="85.782" gradientTransform="matrix(0.377911, -0.925841, 0.743666, 0.30355, -38.552453, 77.095932)">
+      <stop offset="0" style="stop-color: rgb(255, 254, 249);"/>
+      <stop offset="1" style="stop-color: rgb(255, 254, 215);"/>
+    </linearGradient>
+    <linearGradient id="gradient-3" gradientUnits="userSpaceOnUse" x1="14.341" y1="74.485" x2="14.341" y2="94.089" gradientTransform="matrix(0.042606, -0.999091, 0.865162, 0.036894, -59.031971, 96.625358)">
+      <stop offset="0" style="stop-color: rgb(255, 254, 249);"/>
+      <stop offset="1" style="stop-color: rgb(255, 254, 215);"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M 66.431 13.098 C 63.507 16.755 32.677 45.538 22.696 55.278 C 14.905 62.881 37.462 85.639 43.742 80.888 C 61.362 67.555 80.856 42.514 91.094 32.682 C 98.76 25.321 73.188 4.648 66.431 13.098 Z" style="stroke: black; fill: url(#gradient-1);" bx:origin="0.5 0.5"/>
+    <path d="M 20.723 61.304 C 19.822 58.672 13.818 70.342 13.818 70.342 C 13.842 70.372 33.435 89.751 30.26 85.782 L 37.494 81.64 C 37.494 81.64 23.744 70.126 20.723 61.304 Z" style="stroke: black; fill: url(#gradient-2);" bx:origin="0.5 0.5"/>
+    <path d="M 17.435 74.485 C 17.435 74.485 3.356 88.894 8.556 92.186 C 11.563 94.089 25.326 80.887 25.326 80.887 L 17.435 74.485 Z" style="stroke: black; fill: url(#gradient-3);" bx:origin="0.5 0.5"/>
+  </g>
+  <path d="M 3.937 77.111 C 3.937 77.111 3.937 77.111 3.937 77.111 Z" style="stroke: black; fill: none;"/>
+</svg>

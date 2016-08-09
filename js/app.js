@@ -14,6 +14,8 @@ var game = new Phaser.Game(
 var sprites = [
   'floor',
   'assembly_line',
+  'oven',
+  'inner_oven',
   'patties',
   'cheeses',
   'lettuces',
@@ -21,17 +23,20 @@ var sprites = [
   'tomatoes',
   'top_bun',
   'bottom_bun',
-  'mayo',
-  'mustard',
-  'ketchup',
+  'mayo_bottle1',
+  'mustard_bottle1',
+  'ketchup_bottle1',
   'patty',
   'cheese',
   'lettuce',
   'onion',
   'tomato',
-  'ketchup_bottle',
-  'mayo_bottle',
-  'mustard_bottle'
+  'ketchup_bottle2',
+  'mayo_bottle2',
+  'mustard_bottle2',
+  'ketchup',
+  'mayo',
+  'mustard'
 ];
 
 var ingredientMap = {
@@ -42,9 +47,17 @@ var ingredientMap = {
   'tomatoes': 'tomato',
   'top_bun': 'top_bun',
   'bottom_bun': 'bottom_bun',
-  'ketchup': 'ketchup_bottle',
-  'mayo': 'mayo_bottle',
-  'mustard': 'mustard_bottle',
+  'ketchup_bottle1': 'ketchup_bottle2',
+  'mayo_bottle1': 'mayo_bottle2',
+  'mustard_bottle1': 'mustard_bottle2',
+  'ketchup_bottle2': 'ketchup',
+  'mayo_bottle2': 'mayo',
+  'mustard_bottle2': 'mustard'
+};
+
+
+var config = {
+  HAMBURGER_SPEED: 0.5
 };
 
 var floor;
@@ -55,14 +68,14 @@ var cheeses;
 var lettuces;
 var onions;
 var tomatoes;
-var top_buns;
-var bottom_buns;
+var topBuns;
+var bottomBuns;
 var mustard;
 var ketchup;
 var mayo;
 
 var selectedIngredient;
-
+var condiments = ['mustard_bottle1', 'mayo_bottle1', 'ketchup_bottle1']
 var hamburger;
 
 
@@ -75,42 +88,52 @@ function preload() {
 
 function create() {
   floor = game.add.sprite(0, 0, 'floor');
+  inner_oven = game.add.sprite(60, 125, 'inner_oven');
   assemblyLine = game.add.sprite(0, 0, 'assembly_line');
 
   hamburger = game.add.group();
-  hamburger.create(70, 170, 'bottom_bun');
+  hamburger.create(0, 170, 'bottom_bun');
   hamburger.setAll('inputEnabled', true);
   hamburger.callAll('events.onInputDown.add', 'events.onInputDown', placeIngredient);
+
+  oven = game.add.sprite(0, 118, 'oven');
 
   patties = game.add.sprite(160, 260, 'patties');
   cheeses = game.add.sprite(240, 270, 'cheeses');
   lettuces = game.add.sprite(315, 265, 'lettuces');
   onions = game.add.sprite(400, 270, 'onions');
   tomatoes = game.add.sprite(485, 280, 'tomatoes');
-  top_buns = game.add.sprite(170, 335, 'top_bun');
-  bottom_buns = game.add.sprite(250, 345, 'bottom_bun');
-  mayo = game.add.sprite(330, 335, 'mayo');
-  mustard = game.add.sprite(390, 345, 'mustard');
-  ketchup = game.add.sprite(455, 335, 'ketchup');
+  topBuns = game.add.sprite(170, 335, 'top_bun');
+  bottomBuns = game.add.sprite(250, 345, 'bottom_bun');
+  mayoBottle = game.add.sprite(330, 335, 'mayo_bottle1');
+  mustardBottle = game.add.sprite(390, 345, 'mustard_bottle1');
+  ketchupBottle = game.add.sprite(455, 335, 'ketchup_bottle1');
 
-  var ingredients = [patties, cheeses, lettuces, onions, tomatoes, top_buns, bottom_buns, ketchup, mustard, mayo];
-  ingredients.forEach(function(element) {
-    element.inputEnabled = true;
-    element.events.onInputUp.add(pickUpIngredient, this);
+  var ingredients = [patties, cheeses, lettuces, onions, tomatoes, topBuns,
+                     bottomBuns, ketchupBottle, mustardBottle, mayoBottle];
+  ingredients.forEach(function(ingredient) {
+    ingredient.inputEnabled = true;
+    ingredient.events.onInputUp.add(pickUpIngredient, this);
   });
 }
 
 
 function pickUpIngredient(sprite, pointer) {
   selectedIngredient = game.add.sprite(pointer.x, pointer.y, ingredientMap[sprite.key]);
-  selectedIngredient.anchor.setTo(0.5, 0.5);
+  if (condiments.indexOf(sprite.key) >= 0) {
+    selectedIngredient.anchor.setTo(0.15, 0.85);
+  } else {
+    selectedIngredient.anchor.setTo(0.5, 0.5);
+  }
 }
 
 
 function placeIngredient(sprite, pointer) {
   if (selectedIngredient) {
-    var lastIngredient = hamburger.children[hamburger.children.length - 1]
-    hamburger.create(lastIngredient.x, lastIngredient.y - 5, selectedIngredient.key);
+    var lastIngredient = hamburger.children[hamburger.children.length - 1];
+    var spriteKey = ingredientMap[selectedIngredient.key] || selectedIngredient.key;
+    console.log(spriteKey);
+    hamburger.create(lastIngredient.x, lastIngredient.y - 5, spriteKey);
     hamburger.setAll('inputEnabled', true);
     hamburger.callAll('events.onInputDown.add', 'events.onInputDown', placeIngredient);
   }
@@ -118,9 +141,12 @@ function placeIngredient(sprite, pointer) {
 
 
 function update() {
-  hamburger.x += 1;
-  if (hamburger.x > 500) {
-    hamburger.x = 70;
+  hamburger.x += config.HAMBURGER_SPEED;
+  if (hamburger.x > game.width) {
+    hamburger.children.slice(1).forEach(function(ingredient) {
+      hamburger.remove(ingredient);
+    });
+    hamburger.x = 0;
   }
 
   if (selectedIngredient) {
@@ -133,6 +159,7 @@ function update() {
     selectedIngredient = null;
   }
 }
+
 
 function render() {
 

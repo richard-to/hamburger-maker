@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="139.91001892089844" height="160.29800415039062" viewBox="-0.292004 117.824 139.91 160.298" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="gradient-2" gradientUnits="userSpaceOnUse" x1="78.099" y1="176.178" x2="78.099" y2="347.022" gradientTransform="matrix(0.006932, -0.999976, 0.592597, 0.004109, -59.186028, 261.988145)">
+      <stop offset="0" style="stop-color: rgb(205, 207, 197);"/>
+      <stop offset="1" style="stop-color: rgb(108, 111, 100);"/>
+    </linearGradient>
+    <linearGradient id="gradient-1" gradientUnits="userSpaceOnUse" x1="38.729" y1="112.903" x2="38.729" y2="283.747" gradientTransform="matrix(-0.059909, -0.998204, 0.411526, -0.024699, -42.675802, 242.234301)">
+      <stop offset="0" style="stop-color: rgb(212, 214, 204);"/>
+      <stop offset="1" style="stop-color: rgb(102, 105, 93);"/>
+    </linearGradient>
+  </defs>
+  <path d="M 46.109 117.824 L 46.813 278.122 L 139.618 262.655 L 138.915 246.484 L 62.281 261.249 L 61.577 133.994 L 138.213 148.758 L 139.618 131.885 L 46.109 117.824 Z" style="stroke: black; fill: url(#gradient-2);" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 1.7763568394002505e-15)" bx:origin="0.5 0.5"/>
+  <path d="M 45.407 118.528 L -0.292 139.618 L 0.412 266.17 L 46.814 276.717 L 45.407 118.528 Z" style="stroke: black; fill: url(#gradient-1);" transform="matrix(1, 0, 0, 1, 1.4210854715202004e-14, 1.7763568394002505e-15)" bx:origin="0.5 0.5"/>
+</svg>

@@ -55,6 +55,12 @@ var ingredientMap = {
   'mustard_bottle2': 'mustard'
 };
 
+var burgerTypes = [
+  ['patty', 'mustard', 'ketchup', 'cheese', 'onion', 'top_bun'],
+  ['patty', 'mustard', 'ketchup', 'cheese', 'onion', 'lettuce', 'tomato', 'top_bun'],
+  ['patty', 'cheese', 'lettuce', 'onion', 'cheese', 'patty', 'top_bun'],
+  ['patty', 'bottom_bun', 'patty', 'top_bun'],
+];
 
 var config = {
   HAMBURGER_SPEED: 0.5
@@ -75,8 +81,12 @@ var ketchup;
 var mayo;
 
 var selectedIngredient;
+var currentOrder;
 var condiments = ['mustard_bottle1', 'mayo_bottle1', 'ketchup_bottle1']
 var hamburger;
+
+var score = 0;
+var scoreText;
 
 
 function preload() {
@@ -115,8 +125,38 @@ function create() {
     ingredient.inputEnabled = true;
     ingredient.events.onInputUp.add(pickUpIngredient, this);
   });
+
+  var style = { font: "20px Consolas", fill: "#fff", align: "center" };
+  scoreText = game.add.text(20, game.height - 30, "Score: " + score, style);
+
+  currentOrder = getBurgerOrder();
+  renderOrder(currentOrder);
 }
 
+
+function getBurgerOrder() {
+  var index = Math.floor(Math.random() * burgerTypes.length);
+  return burgerTypes[index];
+}
+
+
+function renderOrder(ingredients) {
+  var output = Mustache.render(
+    document.getElementById('ingredients-tmpl').innerHTML,
+    { ingredients: ingredients }
+  );
+  document.getElementById('order').innerHTML = output;
+}
+
+
+function checkOrder(burger, order) {
+  if (burger.children.length - 1 !== order.length) {
+    return false;
+  }
+  return order.every(function(ingredient, index) {
+    return ingredient === hamburger.children[index + 1].key;
+  });
+}
 
 function pickUpIngredient(sprite, pointer) {
   selectedIngredient = game.add.sprite(pointer.x, pointer.y, ingredientMap[sprite.key]);
@@ -132,7 +172,6 @@ function placeIngredient(sprite, pointer) {
   if (selectedIngredient) {
     var lastIngredient = hamburger.children[hamburger.children.length - 1];
     var spriteKey = ingredientMap[selectedIngredient.key] || selectedIngredient.key;
-    console.log(spriteKey);
     hamburger.create(lastIngredient.x, lastIngredient.y - 5, spriteKey);
     hamburger.setAll('inputEnabled', true);
     hamburger.callAll('events.onInputDown.add', 'events.onInputDown', placeIngredient);
@@ -143,10 +182,16 @@ function placeIngredient(sprite, pointer) {
 function update() {
   hamburger.x += config.HAMBURGER_SPEED;
   if (hamburger.x > game.width) {
+    if (checkOrder(hamburger, currentOrder)) {
+      score += 1;
+      updateScore(score)
+    }
     hamburger.children.slice(1).forEach(function(ingredient) {
       hamburger.remove(ingredient);
     });
     hamburger.x = 0;
+    currentOrder = getBurgerOrder();
+    renderOrder(currentOrder);
   }
 
   if (selectedIngredient) {
@@ -158,6 +203,11 @@ function update() {
     selectedIngredient.destroy();
     selectedIngredient = null;
   }
+}
+
+
+function updateScore(score) {
+  scoreText.setText('Score: ' + score);
 }
 
 
